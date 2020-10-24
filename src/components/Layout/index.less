@@ -1,0 +1,39 @@
+.ant-layout {
+  height: 100%;
+
+  .ant-layout-header {
+    display: flex;
+    padding: 0;
+
+    .logo {
+      width: 200px;
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+
+      img {
+        width: 30px;
+        margin-right: 12px;
+        vertical-align: sub;
+      }
+    }
+
+    .navigation {
+      flex: 1;
+      padding: 0 24px;
+      background: #fff;
+      border-bottom: 1px solid #dee2ed;
+    }
+  }
+
+  .ant-layout-content {
+    &-wrap {
+      padding: 16px;
+      height: calc(100% - 70px);
+    }
+  }
+
+  .ant-layout-footer {
+    text-align: center;
+  }
+}

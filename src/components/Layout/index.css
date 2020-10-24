@@ -1,0 +1,32 @@
+.ant-layout {
+  height: 100%;
+}
+.ant-layout .ant-layout-header {
+  display: flex;
+  padding: 0;
+}
+.ant-layout .ant-layout-header .logo {
+  width: 200px;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+.ant-layout .ant-layout-header .logo img {
+  width: 30px;
+  margin-right: 12px;
+  vertical-align: sub;
+}
+.ant-layout .ant-layout-header .navigation {
+  flex: 1;
+  padding: 0 24px;
+  background: #fff;
+  border-bottom: 1px solid #dee2ed;
+}
+.ant-layout .ant-layout-content-wrap {
+  padding: 16px;
+  height: calc(100% - 70px);
+}
+.ant-layout .ant-layout-footer {
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */
