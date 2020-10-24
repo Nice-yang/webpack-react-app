@@ -10,7 +10,7 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist')
   },
-  // devtool: 'inline-source-map', // 追踪到错误和警告在源代码
+  // devtool: 'inline-source-map', // source map 追踪到错误和警告在源代码
   plugins: [
     // new CleanWebpackPlugin(), // 清理dist
     new HtmlWebpackPlugin({ // 使用自定义模板
