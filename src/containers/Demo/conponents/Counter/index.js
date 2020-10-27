@@ -18,7 +18,7 @@ function Counter(props) {
       <Button
         icon={<MinusOutlined />}
         onClick={() => decrementBtn(item)}
-        disabled={!Boolean(data[item])}
+        disabled={!data[item]}
       />
       <span>{item} count: {data[item]}</span>
     </div>

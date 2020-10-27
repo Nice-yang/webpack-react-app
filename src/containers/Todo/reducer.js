@@ -12,11 +12,12 @@ export default (state = {}, action) => {
       return { ...state, list: [{ ...data, id: moment().valueOf(), status: UNCOMPLETED }, ...list] };
     case 'filter':
       return { filter: data, list };
-    case TOGGLE_STATUS:
+    case TOGGLE_STATUS: {
       const newList = [...list];
       const item = newList.find(i => i.id === data);
       item.status = item.status === COMPLETED ? UNCOMPLETED : COMPLETED;
       return { ...state, list: newList };
+    }
     case DELETE:
       return { ...state, list: list.filter(i => i.id !== data) };
     default:

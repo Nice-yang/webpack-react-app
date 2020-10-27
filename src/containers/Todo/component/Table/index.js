@@ -28,6 +28,7 @@ RenderTable.propTypes = {
   data: PropTypes.object.isRequired,
   toggleStatus: PropTypes.func.isRequired,
   deleteItem: PropTypes.func.isRequired,
+  getListData: PropTypes.func.isRequired,
 }
 
 const mapState = state => ({

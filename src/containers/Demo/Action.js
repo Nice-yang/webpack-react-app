@@ -1,5 +1,5 @@
 import { INCREMENT, DECREMENT } from './ActionTypes.js';
-import { getInitData } from '../../server/homepageapi';
+// import { getInitData } from '../../server/homepageapi';
 
 export const initData = (data) => {
   return {

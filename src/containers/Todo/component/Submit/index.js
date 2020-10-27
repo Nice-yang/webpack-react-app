@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Form, Input, Button } from 'antd';
 import { connect } from 'react-redux';
 import * as action from '../../action';
@@ -28,6 +29,10 @@ function Submit(props) {
       </Form.Item>
     </Form>
   )
+}
+
+Submit.propTypes = {
+  addItem: PropTypes.func.isRequired,
 }
 
 const mapDispatch = {
