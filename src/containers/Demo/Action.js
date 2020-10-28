@@ -1,9 +1,9 @@
-import { INCREMENT, DECREMENT } from './ActionTypes.js';
+import { INITDEMO, INCREMENT, DECREMENT } from './ActionTypes.js';
 // import { getInitData } from '../../server/homepageapi';
 
 export const initData = (data) => {
   return {
-    type: 'init',
+    type: INITDEMO,
     data,
   };
 };
