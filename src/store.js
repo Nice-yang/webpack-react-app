@@ -10,13 +10,7 @@ const storeEnhancers = compose(
   composeWithDevTools(),
 );
 
-const initValues = {
-  demoData: {
-    First: 0,
-    Second: 10,
-    Third: 20,
-  },
-};
+const initValues = {};
 
 const store = createStore(reducer, initValues, storeEnhancers);
 
