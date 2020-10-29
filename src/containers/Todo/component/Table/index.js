@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import * as action from '../../action';
 import { ALL } from '../../config';
 import { columns } from './config';
-import './index.less';
 
 function RenderTable(props) {
   const { data, getListData, toggleStatus, deleteItem } = props;

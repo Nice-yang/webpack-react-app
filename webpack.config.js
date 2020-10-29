@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ESLintPlugin = require('eslint-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -19,9 +20,8 @@ module.exports = {
     }),
     new webpack.HotModuleReplacementPlugin(), // 模块热替换 无需刷新
     new MiniCssExtractPlugin(),
-    new ESLintPlugin({
-      files: './src'
-    }),
+    new ESLintPlugin({ files: './src' }),
+    new StylelintPlugin({ files: './src' }),
   ],
   module: {
     rules: [
